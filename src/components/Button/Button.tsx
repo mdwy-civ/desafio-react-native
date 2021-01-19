@@ -1,6 +1,6 @@
 import React from 'react';
-import {Button as ButtonRN, Text} from 'react-native';
-import {Bt, Tx} from './styles';
+import {View, Text} from 'react-native';
+import {Bt} from './styles';
 
 type Props = {
   title: string;
@@ -12,7 +12,7 @@ const Button = (props: Props) => {
 
   return (
     <Bt onPress={onPress}>
-      <Tx>{title}</Tx>
+      <Text style={{textTransform: 'uppercase', color: 'white'}}>{title}</Text>
     </Bt>
   );
 };

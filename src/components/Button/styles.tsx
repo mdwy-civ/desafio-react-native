@@ -5,6 +5,8 @@ export const Bt = styled.TouchableOpacity`
   padding: 16px;
   width: 100%;
   align-items: center;
+  margin-top: 16px;
+  elevation: 2;
 `;
 
 export const Tx = styled.Text`
