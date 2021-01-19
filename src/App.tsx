@@ -1,10 +1,15 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Alert, StyleSheet} from 'react-native';
+import Button from './components/Button/Button';
 
 const App = () => {
+  const onPress = () => {
+    Alert.alert('Atenção', 'Botão clicado');
+  };
+
   return (
     <View style={styles.container}>
-      <Text>Midway Github</Text>
+      <Button onPress={onPress} title="Buscar usuário" />
     </View>
   );
 };
