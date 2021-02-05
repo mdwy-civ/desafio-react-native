@@ -11,8 +11,8 @@ type UseGitHub = [
 ];
 
 export const useGitHub = (): UseGitHub => {
-  const [loading, setLoading] = useState<boolean>(false);
-  const [error, setError] = useState<boolean>(false);
+  const [loading, setLoading] = useState<string>(false);
+  const [error, setError] = useState<string>(false);
   const [data, setData] = useState<number>(0);
 
   const callback = (user: string) => {
