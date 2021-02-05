@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import {Bt} from './styles';
+import {Bt, Tx} from './styles';
 
 type Props = {
   title: string;
